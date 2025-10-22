@@ -1,0 +1,127 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMO6rBwLhN6MxCSVKX+6o1w",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ricarddiyamondhsb-bot/ddp-2025/blob/main/praktikum%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "namakendaraan = \"Beat Ember\"\n",
+        "jeniskendaraan = \"motor\"\n",
+        "cckendaraan = 120\n",
+        "rodakendaraan = 2\n",
+        "\n",
+        "data_kendaraan = [namakendaraan, jeniskendaraan, cckendaraan, rodakendaraan]\n",
+        "print (data_kendaraan)\n",
+        "hargakendaraan = 5000\n",
+        "tipekendaraan = \"metic\"\n",
+        "data_kendaraan.append(\"hargaKendaraan\")\n",
+        "data_kendaraan.append(\"tipeKendaraan\")\n",
+        "print(data_kendaraan)\n",
+        "\n",
+        "merkKendaraan = \"Honda\"\n",
+        "data_kendaraan.insert(2, merkKendaraan)\n",
+        "print(data_kendaraan)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FNfYCiJA7KnC",
+        "outputId": "f99f70ac-821d-4de0-fd57-3eac14dc67d2"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Beat Ember', 'motor', 120, 2]\n",
+            "['Beat Ember', 'motor', 120, 2, 'hargaKendaraan', 'tipeKendaraan']\n",
+            "['Beat Ember', 'motor', 'Honda', 120, 2, 'hargaKendaraan', 'tipeKendaraan']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "print(\"=== PROGRAM MENGHITUNG LUAS BANGUN DATAR ===\")\n",
+        "print(\"1. Masukkan luas persegi\")\n",
+        "print(\"2. Masukkan luas lingkaran\")\n",
+        "print(\"3. Masukkan luas segitiga\")\n",
+        "\n",
+        "pilihan = int(input(\"Masukkan pilihan : \"))\n",
+        "\n",
+        "match pilihan:\n",
+        "    case 1:\n",
+        "        sisi = float(input(\"Masukkan sisi: \"))\n",
+        "        luas = sisi * sisi\n",
+        "        print(f\"Luas persegi = {luas}\")\n",
+        "\n",
+        "    case 2:\n",
+        "        jari = float(input(\"Masukkan jari-jari: \"))\n",
+        "        luas = 3.14 * jari * jari\n",
+        "        print(f\"Luas lingkaran = {luas}\")\n",
+        "\n",
+        "    case 3:\n",
+        "        alas = float(input(\"Masukkan alas: \"))\n",
+        "        tinggi = float(input(\"Masukkan tinggi: \"))\n",
+        "        luas = 0.5 * alas * tinggi\n",
+        "        print(f\"Luas segitiga = {luas}\")\n",
+        "\n",
+        "    case _:\n",
+        "        print(\"Salah pilih! Coba lagi ya.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RVnFdzsl8jTU",
+        "outputId": "7df6b99c-01a9-46eb-9917-b15cf1c63468"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=== PROGRAM MENGHITUNG LUAS BANGUN DATAR ===\n",
+            "1. Masukkan luas persegi\n",
+            "2. Masukkan luas lingkaran\n",
+            "3. Masukkan luas segitiga\n",
+            "Masukkan pilihan : 3\n",
+            "Masukkan alas: 15\n",
+            "Masukkan tinggi: 13\n",
+            "Luas segitiga = 97.5\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
